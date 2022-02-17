@@ -1,13 +1,17 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Home from './components/Hero'
+import Blog from './components/Blog'
 
 function App() {
   return (
     <div >
       <Navbar/>
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/blog' element={<Blog/>} />
+      </Routes>
     </div>
   );
 }

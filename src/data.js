@@ -24,7 +24,7 @@ export const links = [
   {
     id: 5,
     url: '/level1',
-    text: 'LEVEL1',
+    text: 'LEVEL',
   },
   {
     id: 6,
