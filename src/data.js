@@ -23,7 +23,7 @@ export const links = [
   },
   {
     id: 5,
-    url: '/level1',
+    url: '/level',
     text: 'LEVEL',
   },
   {

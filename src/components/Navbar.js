@@ -1,14 +1,21 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { links } from '../data'
 import { FaBars } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-const [showLinks, setShowLinks] = useState(false);
+   const [showLinks, setShowLinks] = useState(false);
    const linksContainerRef = useRef(null);
    const linksRef = useRef(null);
    const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
+  const navLinkStyles = ({ isActive }) => {
+      return {
+        borderBottom: isActive ? '2px solid #000' : 'none'
+      }
+  }
+
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (showLinks) {
@@ -32,7 +39,7 @@ const [showLinks, setShowLinks] = useState(false);
                         const { id, url, text } = link;
                         return (
                             <li className="leading-10"key={id}>
-                            <a className="text-black-200 text-sm font-medium  " href={url}>{text}</a>
+                            <NavLink className="text-black-200 text-sm font-medium" style={navLinkStyles} to={url}>{text}</NavLink>
                             </li>
                         );
                         })}
