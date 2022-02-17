@@ -28,12 +28,12 @@ const Navbar = () => {
   return (
     <div>
         <nav className="bg-white-100">
-            <div>
+            <div className='md:flex md:justify-between md:items-center'>
                 <div className="flex justify-between items-center p-6" >
                     <p className="font-sans text-2xl text-black-200 font-light leading-loose"> Shaply Demo </p>
-                    <button className="text-blue-800" onClick={toggleLinks}> <FaBars/> </button>
+                    <button className="text-blue-800 md:hidden " onClick={toggleLinks}> <FaBars/> </button>
                 </div>
-                <div className='h-0 overflow-hidden transition duration-150 ease-linear pl-10' ref={linksContainerRef}>
+                <div className='h-0 overflow-hidden transition duration-150 ease-linear pl-10 md:flex' ref={linksContainerRef}>
                     <ul className='flex justify-evenly flex-col block transition duration-150 ease-linear' ref={linksRef}>
                         {links.map((link) => {
                         const { id, url, text } = link;
