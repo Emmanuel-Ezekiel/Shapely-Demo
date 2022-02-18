@@ -10,11 +10,7 @@ const Navbar = () => {
    const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
-  const navLinkStyles = ({ isActive }) => {
-      return {
-        borderBottom: isActive ? '2px solid #000' : 'none'
-      }
-  }
+
 
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
