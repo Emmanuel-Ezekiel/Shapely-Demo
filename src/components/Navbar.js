@@ -34,7 +34,7 @@ const Navbar = () => {
                     <button className="text-blue-800 md:hidden " onClick={toggleLinks}> <FaBars/> </button>
                 </div>
                 <div className='h-0 overflow-hidden transition duration-150 ease-linear pl-10 md:block md:h-auto' ref={linksContainerRef}>
-                    <ul className='md:flex md:' ref={linksRef}>
+                    <ul className='md:flex md:justify-evenly md:border-4            md:border-black-900' ref={linksRef}>
                         {links.map((link) => {
                         const { id, url, text } = link;
                         return (
