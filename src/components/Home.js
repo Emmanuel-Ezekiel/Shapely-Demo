@@ -20,8 +20,8 @@ const Home = () => {
           <article className=''>
             <img src="" alt="" />
             <div>
-              <h1></h1>
-              <p></p>
+              <h1>Seo friendly</h1>
+              <p>Emmanuel  Essien</p>
               <button className='bg-purple-600 text-white-200 p-1 h-10 w-40 mt-6 text-white text-sm'> Read More</button>
             </div>
           </article>
