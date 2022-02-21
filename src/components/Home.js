@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from '../assets/macbook-preview-flexible.webp.png'
 
 const Home = () => {
   return (
@@ -17,11 +18,13 @@ const Home = () => {
       </section>
       <section className='min-h-screen md:max-w-full mx-auto max-w-6x'>
         <div className='bg-white ma-h-screen h-screen'>
-          <article className=''>
-            <img src="" alt="" />
+          <article className='h-full flex flex-col justify-center items-center'>
+            <img src={Img} alt="" className='' />
             <div>
-              <h1>Seo friendly</h1>
-              <p>Emmanuel  Essien</p>
+              <h3 className='text-sm '>SEO Friendly</h3>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar luctus sem, eget porta orci. Maecenas molestie dui id diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et interdum. Maecenas faucibus mattis imperdiet. In rhoncus ac ligula id ultricies.</p>
+              </div>
               <button className='bg-purple-600 text-white-200 p-1 h-10 w-40 mt-6 text-white text-sm'> Read More</button>
             </div>
           </article>
