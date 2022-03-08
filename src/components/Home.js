@@ -43,6 +43,20 @@ const Home = () => {
           </article>
         </div>
       </section>
+      <section className='min-h-screen md:max-w-full mx-auto max-w-6x'>
+        <div className='bg-gray-100 ma-h-screen h-screen p-5'>
+          <article className='h-full flex flex-col justify-center items-center'>
+            <div>
+              <h3 className='text-xl font-normal mb-5'>Porfolio Section</h3>
+              <div className='mb-2 text-xs leading-6 font-normal'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar luctus sem, eget porta orci. Maecenas molestie dui id diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et interdum. Maecenas faucibus mattis imperdiet. In rhoncus ac ligula id ultricies. mew</p>
+              </div>
+              <button className='bg-purple-600 text-white-200 p-2 h-10 w-40 mt-6 text-white text-sm'> SEE IT IN ACTION</button>
+            </div>
+            <img src={Img} alt="macbook" className='mt-7' />
+          </article>
+        </div>
+      </section>
     </>
   )
 }
