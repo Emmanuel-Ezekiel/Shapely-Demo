@@ -7,6 +7,7 @@ import AboutTest from './components/AboutTest'
 import Portfolio from './components/Portfolio'
 import Level from './components/Level'
 import Shop from './components/Shop'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='level' element={<Level/>} />
         <Route path='shop' element={<Shop/>} />
       </Routes>
+       <Footer/>
     </div>
   );
 }
