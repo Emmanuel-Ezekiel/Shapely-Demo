@@ -1,10 +1,10 @@
-import React from 'react'
-import Img from '../assets/macbook-preview-flexible.webp.png'
-import Img2 from '../assets/flexible-portfolio.webp.png'
-import Img3 from '../assets/photo-1440557653082-e8e186733eeb-1.jpeg'
+import React from 'react';
+import Img from '../assets/macbook-preview-flexible.webp.png';
+import Img2 from '../assets/flexible-portfolio.webp.png';
+import Img3 from '../assets/photo-1440557653082-e8e186733eeb-1.jpeg';
+
 
 const Home = () => {
-
   
   return (
     <>
@@ -81,6 +81,7 @@ const Home = () => {
           </article>
         </div>
       </section>
+   
     </>
   )
 }
