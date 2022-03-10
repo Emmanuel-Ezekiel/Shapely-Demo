@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ButtonContainer = styled.span`
   position: absolute;
-  bottom: -3030px;
+  bottom: -3000px;
   right: 32px;
   align-items: center;
   height: 32px;
@@ -19,7 +19,6 @@ const ButtonContainer = styled.span`
   transition: opacity 0.4s, color ease-in-out 0.2s, background ease-in-out 0.2s;
   display: ${({ isScrollButtonVisible }) =>
     isScrollButtonVisible ? 'flex' : 'none'};
-
   &:hover {
     opacity: 1;
   }
@@ -42,7 +41,7 @@ const BackToTopButton = () => {
       window.removeEventListener('scroll', checkScrollHeight);
     };
   }, [showButton]);
-
+  
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
