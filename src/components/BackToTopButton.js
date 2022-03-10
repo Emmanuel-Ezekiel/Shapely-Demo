@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ButtonContainer = styled.span`
   position: absolute;
-  bottom: -3000px;
+  bottom: -2850px;
   right: 32px;
   align-items: center;
   height: 32px;
@@ -41,7 +41,7 @@ const BackToTopButton = () => {
       window.removeEventListener('scroll', checkScrollHeight);
     };
   }, [showButton]);
-  
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

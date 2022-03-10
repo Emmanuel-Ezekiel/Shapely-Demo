@@ -48,7 +48,7 @@ const Home = () => {
           </article>
         </div>
       </section>
-      <section className='min-h-full md:max-w-full mx-auto max-w-6x'>
+      <section className='min-h-full md:max-w-full mx-auto max-w-6x overlow-hidden'>
         <div className=' bg-section-pattern bg-no-repeat bg-center  bg-cover bg-auto  ma-h-screen h-96 p-5'>
           <article className='h-full flex flex-col justify-center items-center'>
             <div className='md:w-auto md:h-auto md:text-center'>
