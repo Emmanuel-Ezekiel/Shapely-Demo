@@ -65,9 +65,9 @@ const Home = () => {
         <div className='bg-gray-100 ma-h-screen h-screen p-5'>
           <article className='h-full flex flex-col justify-center items-center'>
             <div>
-              <h3 className='text-xl font-normal mb-5 text-center'>Limitless Options</h3>
+              <h3 className='text-xl font-normal mb-5 text-center md:mt-10'>Limitless Options</h3>
               <div>
-                <p className='mb-6 text-xs font-normal break-words leading-7 text-black text-justify md:w-9/12 md:text-center md:ml-36 md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar luctus sem, eget porta orci. Maecenas molestie dui id diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et interdum. Maecenas faucibus mattis imperdiet. In rhoncus ac ligula id ultricies. mew</p>
+                <p className='mb-6 text-xs font-normal break-words leading-7 text-black text-justify md:w-9/12 md:text-center md:ml-36 md:text-xl '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar luctus sem, eget porta orci. Maecenas molestie dui id diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et interdum. Maecenas faucibus mattis imperdiet. In rhoncus ac ligula id ultricies. mew</p>
               </div>
               <div className='md:flex md:justify-center md:-ml-96'>
                    <button className='bg-purple-600 text-white-200 p-2 h-10 w-40 mt-6 text-white text-sm ml-20 md:-mr-96'>DOWNLOAD NOW</button>
@@ -75,6 +75,18 @@ const Home = () => {
              
             </div>
             <img src={Img3} alt="macbook" className='mt-10 h-screen w-screen md:w-full md:h-4/6' />
+          </article>
+        </div>
+      </section>
+      <section className='min-h-full md:max-w-full mx-auto max-w-6x'>
+        <div className='bg-gray-300 ma-h-screen h-96 p-5'>
+          <article className='h-full flex flex-col justify-center items-center'>
+            <div>
+              <h3 className='text-3xl font-normal mb-5 text-center md:mt-10'>Do you like this awesome Wordpress theme? </h3>
+              <div className='md:flex md:justify-center md:-ml-96'>
+                   <button className='bg-purple-600 text-white-200 p-2 h-10 w-full mt-6 text-white text-sm  md:-mr-96'>DOWNLOAD NOW</button>
+              </div>
+            </div>
           </article>
         </div>
       </section>
